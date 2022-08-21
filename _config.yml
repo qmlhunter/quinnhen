@@ -2,4 +2,14 @@ theme: jekyll-theme-hacker
 title: Quinns GitHub Page
 description: Bookmark this to keep an eye on my project updates!
 
+---
+title: Projects
+layout: page
+filename: Projects.md
+--- 
+
+## Projects
+
+This page is a work in progress
+
 
