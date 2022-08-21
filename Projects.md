@@ -1,6 +1,8 @@
+---
+title: Projects
 layout: page
-title: "Projects"
-permalink: /Projects
+filename: Projects.md
+--- 
 
 ## Projects
 
