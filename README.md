@@ -1,2 +1,2 @@
 # qmlhunter.github.io
-My Github Page
+## Welcome to my Github Projects page!
