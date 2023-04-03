@@ -7,9 +7,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h1>Something went wrong...</h1>
-<p>If you're trying to use the HEN Installer, either your firmware version isn't supported or you're not on a PS3.</p>
+<h1>Something went wrong</h1>
+<p>You're either not on a PS3 or my site's bugged. Oh well enjoy playing this game instead of pushing HEN!</p>
 <p><a href="https://qmlhunter.github.io/quinnhen">Back to main page.</a>
+function startGame() {
+  myGamePiece = new component(30, 30, "red", 10, 120);
+  myGamePiece.gravity = 0.05;
+  myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+  myGameArea.start();
+}
+
+var myGameArea = {
+  canvas : document.createElement("canvas"),
+  start : function() {
+    this.canvas.width = 480;
+    this.canvas.height = 270;
+    this.context = this.canvas.getContext("2d");
+    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    this.frameNo = 0;
+  },
+  clear : function() {
+    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+  }
+}
 </body>
 
 </html>
